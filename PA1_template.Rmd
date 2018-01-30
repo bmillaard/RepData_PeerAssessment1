@@ -172,7 +172,7 @@ median(totalstepnew)
 activitynew$wd<-weekdays(activitynew$date)
 activitynew$fwd<- as.factor(c("weekend", "weekday"))
 activitynew[activitynew$fwd == "Sunday" | activitynew$fwd == "Saturday"]<- factor("weekend")
-activitynew[!(activitynew$fwd == "Sunday" | activitynew$fwd == "Saturday")]<- factor("weekday")
+
 ```
 ```{r}
 activitynew$date <- as.Date(activitynew$date)
